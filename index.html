@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- style-->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+  <title>IP Address Tracker</title>
+</head>
+
+<body>
+  <main>
+    <div class="top-container">
+      <h1 class="main-title">IP Address Tracker</h1>
+      <form action="#" class="IP-form">
+        <div class="input-container">
+          <input type="text" name="IP input" class="IP-input" aria-label="IP input"
+            placeholder="Search for any IP address or domain" aria-placeholder="Search for any IP address or domain">
+          <p class="fail-message">Please enter a valid IP address!</p>
+        </div>
+        <button type="submit" class="search" aria-label="search button">
+          <img src="images/icon-arrow.svg" alt="search button">
+        </button>
+      </form>
+      <div class="results">
+        <div class="holder">
+          <h2 class="title">IP Address</h2>
+          <p class="IP-address value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">Location</h2>
+          <p class="location value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">Timezone</h2>
+          <p class="timezone value"></p>
+        </div>
+        <div class="holder">
+          <h2 class="title">ISP</h2>
+          <p class="isp value"></p>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <!-- Main JS -->
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
