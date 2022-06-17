@@ -45,9 +45,6 @@ body {
 .IP-input,
 .search {
   height: 65px;
-  /* display: block;
-  display: flex;
-  align-items: center; */
   border: none;
   cursor: pointer;
 }
