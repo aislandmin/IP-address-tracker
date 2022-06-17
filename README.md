@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Link
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [IP address tracker](https://ip-address-tracker-aislandmin.vercel.app/)
 
 ## My process
 
@@ -39,6 +39,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Flexbox
+- JavaScript
 - Fetch API, async and await
 - [IP Geolocation API by IPify](https://geo.ipify.org/) to get the IP Address locations
 - [LeafletJS](https://leafletjs.com/) To generate the map
